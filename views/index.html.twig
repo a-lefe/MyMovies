@@ -1,0 +1,13 @@
+{% extends "layout.html.twig" %} 
+
+{% block title %}Accueil{% endblock %} 
+
+
+{% block content %}
+{% for movie in movies %}
+<article>
+    <h2>{{ movie.title }}</a></h2>
+    <p>{{ movie.mov_description_long }}</p>
+</article>
+{% endfor %} 
+{% endblock %}
